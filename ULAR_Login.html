@@ -1,0 +1,40 @@
+<?php include ('server.php') ?>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ISDA Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="The Code Runners">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="logins.css">
+        <link rel="icon" type="image/x-icon" href="ISDA_favicon.ico">
+    </head>
+    <body>
+        <section>
+        <div class="login-box">
+            <form name="LoginPage" action="register.php" method="post" target="_self" autocomplete="on">
+                <?php include('errors.php'); ?>
+                <h2>Login</h2>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required name="Username">
+                    <label for="">Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required name="Userpass">
+                    <label for="">Password</label>
+                </div>
+                <div class="rem-psswd">
+                    <label><input type="checkbox">Remember Me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" name="login_user">Login</button>
+            </form>
+        </div>
+        </section>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
