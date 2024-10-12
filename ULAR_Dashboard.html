@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Screen</title>
+    <link rel="stylesheet" href="dashstyle.css"> <!-- Link to external CSS -->
+    <style>
+        .above-button {
+            width: 100%;
+            margin-top: 0px; /* Space between the button and container */
+            padding: 10px 20px; /* Button padding */
+            background-color: #533c22; /* Button background color */
+            color: white; /* Text color */
+            border: none; /* No border */
+            border-radius: 1px; /* Rounded corners */
+            cursor: pointer; /* Pointer on hover */
+        }
+        
+        .above-button:hover {
+            background-color: #111; /* Darker shade on hover */
+        }
+        
+        .content {
+            text-align: center; /* Center the text inside the container */
+        }
+        iframe {
+            width: 99%; /* Width of the iframe */
+            height: 99%; /* Height of the iframe */
+            border: 2px solid #ccc; /* Border around the iframe */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+        }
+        .button {
+            display: inline-block;
+            padding: 5px 10px;
+            font-size: 15px;
+            margin: 0px;
+            background-color: rgb(111, 78, 55);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <button class="above-button" onclick="goHome()">Home</button>
+    <div class="background">
+        <div class="dashboard">
+            <h2>ULAR Dashboard: View the latest analytics with ease.</h2>
+            <a href="ULAR_DashboardChart.html" class="button" target="frame">View Charts</a>
+            <a href="ULAR_DashboardReport.html" class="button" target="frame">View Reports</a>
+            <div class="empty-space">
+                <iframe src="" name="frame" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <button class="logout-button" onclick="logout()">Logout</button>
+        </div>
+    </div>
+    <script>
+      function logout() {
+          // Logic for logging out the user
+          // This could be an API call, clearing tokens, or redirecting to a logout endpoint
+          alert('You have logged out successfully!'); // Temporary alert for demonstration
+          // Optionally, redirect to the login page
+          window.location.href = 'ULAR_Login.html'; // Uncomment and specify your login page
+      }
+        function goHome() {
+            window.location.href = 'ULAR_Home.html'; // Uncomment and specify your login page
+        }    
+  </script>
+</body>
+</html>

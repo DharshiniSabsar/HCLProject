@@ -1,0 +1,53 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.background {
+  background-image: url('tbs1.png'); /* Replace with your background image */
+  background-size: cover; /* Make the background cover the entire area */
+  background-position: center;
+  height: 100%; /* Fill the entire viewport height */
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+.dashboard {
+  background-color: rgba(244, 240, 221, 0.9); /* White background with transparency */
+  border: 2px solid #333; /* Border around the dashboard */
+  border-radius: 8px; /* Rounded corners */
+  padding: 30px; /* Padding inside the box */
+  width: 85%; /* Width of the dashboard box */
+  height: 80%;
+  max-width: 1200px; /* Maximum width */
+  text-align: center; /* Center text inside the dashboard */
+}
+
+.empty-space {
+  height: 80%;
+  /* height: 300px; Height of the empty space */
+  border: 2px dashed #666; /* Dashed border around the empty space */
+  margin-top: 10px; /* Margin above the empty space */
+  background-color: rgba(240, 240, 240, 0.5); /* Light gray background for contrast */
+  border-radius: 5px; /* Rounded corners for the empty space */
+}
+
+/* Add this CSS for the logout button */
+.logout-button {
+  background-color: #674e19; /* Red background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-top: 17px; /* Space above the button */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.logout-button:hover {
+  background-color: #090806; /* Darker red on hover */
+}
+
